@@ -1,0 +1,18 @@
+language: java
+
+sudo: false
+
+jdk:
+  - oraclejdk7
+
+script: mvn verify 
+        mvn install
+        mvn package
+
+branches:
+  only:
+  - master
+notifications:
+  email:
+  - bhufegad@in.ibm.com
+
